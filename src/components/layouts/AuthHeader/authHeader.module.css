@@ -1,0 +1,7 @@
+.intro {
+    color: var(--textColor);
+}
+.link {
+    color: black !important;
+  font-weight: 300;
+}

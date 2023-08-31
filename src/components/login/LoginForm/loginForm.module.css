@@ -1,0 +1,83 @@
+.mainContainer {
+    padding: 15px;
+    background-color: var(--whiteColor);
+    box-shadow: var(--mainShadow);
+    overflow: hidden !important;
+}
+.label {
+    font-weight: 600;
+    color: var(--textColor);
+}
+.inp {
+    width: 100%;
+}
+.mainContainer , .inp {
+      border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+.link {
+    position: relative;
+    color: var(--blackColor) !important;
+   
+}
+.link:before {
+    content: 0;
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    background-color: var(--textColor);
+    width: 100%;
+    height: 1px;
+    opacity: 0;
+}
+.link:hover::before {
+    opacity: 1;
+}
+.facebookBtn , .btn  , .gmailBtn{
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;  
+     border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    transition: var(--mainTransition);
+    -webkit-transition: var(--mainTransition);
+    -moz-transition: var(--mainTransition);
+    -ms-transition: var(--mainTransition);
+    -o-transition: var(--mainTransition);
+}
+.btn {
+   
+    background-color: var(--blackColor);
+    color: var(--whiteColor);
+    width: 200px;
+    margin: auto;
+   
+}
+.facebookBtn , .gmailBtn {
+      color: white;
+    font-weight: 600;
+    font-size: 18px;
+    width: 100%;
+}
+.facebookBtn {
+    background-color: #1877f2;
+  
+}
+.btn:hover , .facebookBtn:hover , .gmailBtn:hover {
+    transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    -o-transform: scale(1.03);
+}
+.gmailBtn {
+  
+    background-color: #ea4335;
+}

@@ -1,13 +1,106 @@
-body {
+/* start global style */
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+  font-family: 'Cairo', sans-serif;
+}
+body {
+  text-transform: capitalize;
+  font-family: 'Cairo', sans-serif;
+  overflow-x: hidden !important;
+  direction: rtl;
+  background-color: #efefef;
+}
+ul , li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+input , textarea , button  {
+ 
+  padding: 10px 7px;
+}
+input , textarea {
+  border: 1px solid #ccc;
+  caret-color: var(--textColor);
+}
+input:focus , textarea:focus {
+  outline: none;
+}
+button {
+  border: none;
+}
+/* end global style */
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* start variables */
+:root {
+  --grayColor : #e8e8e8 ; 
+  --redColor : #f90000 ; 
+  --blackColor : #333333 ; 
+  --whiteColor : #ffffff ; 
+  --yellowColor : #fff1ad ; 
+  --textColor : #555 ; 
+  --sectionsPadding : 25px 0 ; 
+  --mainShadow : rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  --mainTransition : 0.4s ; 
+  --mainBorderRduis : 12px ; 
+  
 }
+/* end variables */
+/* start utility classes */
+.line {
+  color: #ccc;
+}
+.pointer {
+  cursor: pointer;
+}
+.menu , .cart {
+    position: fixed;
+    top: 0;
+    overflow-y: scroll;
+    overflow-x: hidden !important;
+    background-color: var(--grayColor);
+    height: 100vh;
+    width: 300px;
+    z-index: 20;
+    transition: var(--mainTransition);
+    -webkit-transition: var(--mainTransition);
+    -moz-transition: var(--mainTransition);
+    -ms-transition: var(--mainTransition);
+    -o-transition: var(--mainTransition);
+}
+@media screen and (min-width : 700px) {
+  .cart{
+    width: 550px;
+  }
+}
+.menu.show {
+    right: 0;
+}
+.cart.show {
+    left: 0;
+}
+.menu.show , .cart.show {
+    opacity: 1;
+}
+.menu.hide {
+    right: -300%;
+}
+.cart.hide {
+    left: -300%;
+}
+.menu.hide , .cart.hide {
+    opacity: 0;
+}
+.icon {
+  color: var(--textColor);
+}
+.borderBottom {
+  border-bottom: 1px solid #ccc;
+}
+/* end utility classes */

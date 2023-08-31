@@ -1,0 +1,23 @@
+.logo {
+    width: 150px;
+    height: 45px;
+    object-fit: cover;
+}
+.inp {
+    width: 100%;
+    box-shadow: var(--mainShadow);
+}
+.icon {
+    position: absolute;
+    top: 50%;
+  
+    left: 28px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.icon , .cart {
+ color: var(--textColor);
+}

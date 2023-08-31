@@ -1,0 +1,21 @@
+.navContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 70px;
+    background-color: var(--whiteColor);
+    border-bottom: 1px solid #ccc;
+    box-shadow: var(--mainShadow);
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+.icon {
+    color: var(--textColor);
+}
+.logo {
+     width: 150px;
+    height: 45px;
+    object-fit: cover;
+}

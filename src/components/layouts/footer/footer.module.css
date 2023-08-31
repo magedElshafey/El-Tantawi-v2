@@ -1,0 +1,38 @@
+.mainContainer {
+    background-color: var(--whiteColor);
+    width: 100vw;
+}
+.link {
+    position: relative;
+    color: var(--textColor) !important;
+}
+.link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    height: 1px;
+    background-color: var(--textColor) !important;
+    width: 100%;
+    opacity: 0;
+}
+.link:hover::before {
+    opacity: 1;
+}
+.social {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    transition: var(--mainTrainsiton);
+    -webkit-transition: var(--mainTrainsiton);
+    -moz-transition: var(--mainTrainsiton);
+    -ms-transition: var(--mainTrainsiton);
+    -o-transition: var(--mainTrainsiton);
+}
+.social:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
