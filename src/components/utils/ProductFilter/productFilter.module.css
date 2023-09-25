@@ -1,0 +1,56 @@
+.filterContainer {
+  position: sticky;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  top: 25px;
+  right: 0;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.icon {
+  cursor: pointer;
+}
+.filterBtn {
+  height: 50px;
+  padding: 7px 15px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  border: none;
+  width: 200px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.filterSideBar {
+  position: fixed;
+  z-index: 25;
+  top: 0;
+  background-color: #f1f1f1;
+  width: 300px;
+  height: 100vh;
+  bottom: 0;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+.show {
+  left: 0;
+}
+.hide {
+  left: -300%;
+}
+.close {
+  position: relative;
+  cursor: pointer;
+  right: 5px;
+  top: 5px;
+  margin-bottom: 20px;
+}

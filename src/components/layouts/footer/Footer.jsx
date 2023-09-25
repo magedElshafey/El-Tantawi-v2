@@ -3,7 +3,7 @@ import style from "./footer.module.css";
 import { Link } from "react-router-dom";
 const Footer = ({ categories, importantLinks, socialMedia, account }) => {
   return (
-    <div className={`mt-5 ${style.mainContainer}`}>
+    <div className={`m-0 p-0 ${style.mainContainer}`}>
       <div className="container">
         <div className="pt-3 row justify-content-between">
           <div className="col-6 col-md-3">

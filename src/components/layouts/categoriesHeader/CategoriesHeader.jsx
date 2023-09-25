@@ -6,7 +6,7 @@ const CategoriesHeader = ({ data }) => {
     <div className={`d-none d-md-block ${style.mainDiv} py-2`}>
       <div className={`${style.content}`}>
         <div className="container">
-          <ul className="m-0 p-0 d-flex align-items-center gap-4">
+          <ul className="m-0 p-0  d-flex align-items-center  justify-content-between">
             {data.map((item, index) => (
               <li className={style.bg} key={index}>
                 <Link className={style.link} to={`/cat/${item.path}`}>

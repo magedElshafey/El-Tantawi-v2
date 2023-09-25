@@ -15,6 +15,10 @@ import {
   importantLinks,
   account,
   socialMedia,
+  servicesOffers,
+  bannerSlider,
+  specialProducts,
+  bestSaller,
 } from "./fakers/data";
 // shared layouts
 import AuthHeader from "./components/layouts/AuthHeader/AuthHeader";
@@ -26,6 +30,8 @@ import Footer from "./components/layouts/footer/Footer";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Regester from "./pages/Regester";
+import MainCategory from "./pages/MainCategory";
+import SubCategory from "./pages/SubCategory";
 const App = () => {
   // handle scroll to top after change any page
   function ScrollToTopAfterChangePage() {
@@ -50,13 +56,35 @@ const App = () => {
       <CategoriesHeader data={categories} />
       <MobHeader data={categories} />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route
+          path="/"
+          element={
+            <Home
+              offers={servicesOffers}
+              bannerSlider={bannerSlider}
+              specialProducts={specialProducts}
+              bestSaller={bestSaller}
+            />
+          }
+        />
       </Routes>
       <Routes>
         <Route path="/login" element={<Login />} />
       </Routes>
       <Routes>
         <Route path="/reg" element={<Regester />} />
+      </Routes>
+      <Routes>
+        <Route
+          path="/cat/:title"
+          element={<MainCategory data={categories} />}
+        />
+      </Routes>
+      <Routes>
+        <Route
+          path="/cat/:title/:subTitle"
+          element={<SubCategory data={categories} />}
+        />
       </Routes>
       <Footer
         categories={categories}

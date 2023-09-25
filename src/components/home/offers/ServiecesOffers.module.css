@@ -1,0 +1,35 @@
+.mainContainer {
+  background-color: var(--whiteColor);
+  box-shadow: var(--mainShadow);
+  width: 24%;
+  border-radius: var(--mainBorderRduis);
+  -webkit-border-radius: var(--mainBorderRduis);
+  -moz-border-radius: var(--mainBorderRduis);
+  -ms-border-radius: var(--mainBorderRduis);
+  -o-border-radius: var(--mainBorderRduis);
+}
+@media screen and(max-width : 992px) {
+  .mainContainer {
+    width: 49%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mainContainer {
+    width: 100%;
+  }
+}
+.title {
+  font-weight: 600;
+  font-size: 18px;
+}
+.mainImg {
+  width: 100%;
+  margin: auto !important;
+  object-fit: cover;
+  height: 300px;
+  border-radius: var(--mainBorderRduis);
+  -webkit-border-radius: var(--mainBorderRduis);
+  -moz-border-radius: var(--mainBorderRduis);
+  -ms-border-radius: var(--mainBorderRduis);
+  -o-border-radius: var(--mainBorderRduis);
+}

@@ -1,0 +1,12 @@
+.mainContainer {
+  background-color: var(--whiteColor);
+}
+.img {
+  width: 250px;
+  height: 250px;
+  margin: 20px auto !important;
+  object-fit: cover;
+}
+.title {
+  color: var(--textColor) !important;
+}
