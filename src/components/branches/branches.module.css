@@ -1,0 +1,10 @@
+.mainContainer {
+    background-color: white !important;
+}
+.mainCard {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+.red {
+    border: 1px solid red;
+}

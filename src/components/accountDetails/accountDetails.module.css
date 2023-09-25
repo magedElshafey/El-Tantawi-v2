@@ -1,0 +1,39 @@
+.mainContainer {
+    background-color: var(--whiteColor);
+    box-shadow: var(--mainShadow);
+}
+.inp {
+    width: 95% !important;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+@media screen and (max-width : 767px) {
+    .inp {
+        width: 100%;
+    }
+}
+.btn {
+    width: 280px;
+    margin: auto;
+    background-color: black;
+    color: white;
+    border: none;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+.btn:hover {
+    transform: translateY(-15px) !important;
+    -webkit-transform: translateY(-15px) !important;
+    -moz-transform: translateY(-15px) !important;
+    -ms-transform: translateY(-15px) !important;
+    -o-transform: translateY(-15px) !important;
+}
+.line {
+    color: #dddd;
+}

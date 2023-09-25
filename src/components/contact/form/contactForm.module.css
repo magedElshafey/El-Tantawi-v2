@@ -1,0 +1,54 @@
+.mainForm {
+    box-shadow: var(--mainShadow);
+    background-color: var(--whiteColor);
+    width: 100%;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+.inp , .text {
+    padding: 7px 15px;
+    width: 100%;
+    border: 2px solid #eee;
+  
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.inp {
+      height: 50px;
+}
+.text {
+    height: 100px;
+}
+.inp:focus , .text:focus {
+    outline: 1px solid var(--red);
+}
+.btn {
+    color: white;
+    border: none;
+    background-color: black;
+    padding: 7px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 120px;
+    border-radius: 5px;
+    transition: 0.3s;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.btn:hover {
+    opacity: 0.5;
+}

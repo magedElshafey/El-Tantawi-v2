@@ -138,3 +138,29 @@ button {
 .swiper-scrollbar-drag {
 }
 /*end swipper styles */
+.white {
+  background-color: var(--whiteColor);
+  border-radius: var(--mainBorderRduis);
+  -webkit-border-radius: var(--mainBorderRduis);
+  -moz-border-radius: var(--mainBorderRduis);
+  -ms-border-radius: var(--mainBorderRduis);
+  -o-border-radius: var(--mainBorderRduis);
+}
+.error {
+  color: red;
+  font-size: 14px;
+}
+.red {
+  color: red !important;
+}
+.faqContainer {
+    background-color: var(--whiteColor);
+    box-shadow: var(--mainShadow) !important;
+    border: 1px solid #ddd;
+    box-shadow: var(--mainShadow);
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}

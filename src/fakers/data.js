@@ -5042,12 +5042,12 @@ export const importantLinks = {
   mainTitle: "روابط مهمة",
   links: [
     {
-      title: "مركز المساعدة",
-      path: "/help",
-    },
-    {
       title: "من نحن",
       path: "/about",
+    },
+    {
+      title: "تواصل معنا",
+      path: "/contact",
     },
     {
       title: "فروعنا",
@@ -5058,8 +5058,12 @@ export const importantLinks = {
       path: "/offer",
     },
     {
-      title: "اتصل بنا",
-      path: "/contact",
+      title: "الاسئلة الأكثر شيوعا",
+      path: "/faqs",
+    },
+    {
+      title: "تفاصيل التقسيط",
+      path: "/installment",
     },
   ],
 };
@@ -5364,3 +5368,76 @@ export const bestSaller = {
     },
   ],
 };
+export const branches = [
+  {
+    title: "الطناطوي- تقسيم بهاء",
+    city: "طلخا",
+    governemnt: "الدقهلية",
+    address: "طلخا - تقسيم بهاء شارع الجمهورية",
+    phone: "01022153359",
+    website: "https://www.google.com",
+  },
+  {
+    title: "الطناطوي- صلاح سالم",
+    city: "طلخا",
+    governemnt: "الدقهلية",
+    address: "طلخا - شارع صلاح سالم",
+    phone: "01022153359",
+    website: "https://www.google.com",
+  },
+  {
+    title: "الطناطوي- الطوميهي",
+    city: "المنصورة",
+    governemnt: "الدقهلية",
+    address: "المنصورة - ميدان الطوميهي",
+    phone: "01022153359",
+    website: "https://www.google.com",
+  },
+  {
+    title: "الطناطوي- تقسيم بهاء",
+    city: "طلخا",
+    governemnt: "الدقهلية",
+    address: "طلخا - تقسيم بهاء شارع الجمهورية",
+    phone: "01022153359",
+    website: "https://www.google.com",
+  },
+];
+export const dashboardLinks = [
+  {
+    id: 1,
+    title: "بيانات الحساب",
+    path: "/accountDetails",
+  },
+  {
+    id: 2,
+    title: "طلباتي",
+    path: "/orders",
+  },
+  {
+    id: 3,
+    title: "المفضلة",
+    path: "/wishlist",
+  },
+  {
+    id: 4,
+    title: "مرتجعاتي",
+    path: "/returns",
+  },
+];
+export const faqs = [
+  {
+    id: 1,
+    title: "تجربة",
+    desc: "بسيبيسبيسبسبسبس",
+  },
+  {
+    id: 2,
+    title: "تجربة 2",
+    desc: "بتمسبتصهبثصهمنلايتنل",
+  },
+  {
+    id: 3,
+    title: "تجربة 3",
+    desc: "بتمسنباسنلاسيشتنلاعقثه",
+  },
+];
