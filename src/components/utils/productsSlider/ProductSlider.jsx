@@ -32,7 +32,7 @@ const ProductSlider = ({ data }) => {
   };
   return (
     <div className="py-3">
-      <h3 className={`m-0 p-0 mb-3 fs-3 fw-bolder`}>{data.title}</h3>
+      <h3 className={`m-0 p-0 mb-3 fw-bolder`}>{data.title}</h3>
       <Swiper
         scrollbar={{ draggable: true }}
         {...swiperOptions}
@@ -52,12 +52,12 @@ const ProductSlider = ({ data }) => {
               />
             </Link>
             <Link
-              className={`d-inline-block px-3 m-0 mb-3  text-center ${style.title}`}
+              className={`d-inline-block px-3 m-0 mb-2  text-center ${style.title}`}
               to={`/product/${item.id}`}
             >
               {item.title}
             </Link>
-            <p className="fs-5 fw-bolder m-0 p-0 px-2 mb-2">
+            <p className="fs-5 fw-bolder m-0 p-0 px-2 mb-4">
               {item.disscount
                 ? item.orignalPrice - item.disscount
                 : item.orignalPrice}

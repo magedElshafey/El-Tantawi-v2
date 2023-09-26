@@ -3,7 +3,7 @@ import style from "./categoryBox.module.css";
 import { Link } from "react-router-dom";
 const SubCategoryBox = ({ mainCategory, data }) => {
   return (
-    <div className="my-3 d-flex align-items-center gap-3 justify-content-center flex-wrap">
+    <div className="my-3 d-flex align-items-center gap-3 flex-wrap">
       {data.map((item, index) => (
         <Link
           to={`/cat/${mainCategory}/${item.enTitle}`}

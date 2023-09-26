@@ -2,8 +2,8 @@
   background-color: var(--whiteColor);
 }
 .img {
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   margin: 20px auto !important;
   object-fit: cover;
 }

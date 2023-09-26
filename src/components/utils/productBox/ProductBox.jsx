@@ -16,7 +16,7 @@ const ProductBox = ({ key, data }) => {
       >
         {data.title}
       </Link>
-      <p className="my-2 p-0 px-2 fs-4 fw-bolder">
+      <p className="my-2 p-0 px-2 fs-5 fw-bolder">
         {data.disscount
           ? data.orignalPrice - data.disscount
           : data.orignalPrice}
